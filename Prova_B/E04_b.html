@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
+    const precoMercado1 = Number(prompt(`Qual o preço do kg da carne bovina no 1° mercado?`).trim().replace(",","."));
+    const precoMercado2 = Number(prompt(`Qual o preço do kg da carne bovina no 2° mercado?`).trim().replace(",","."));
+    const precoMercado3 = Number(prompt(`Qual o preço do kg da carne bovina no 3° mercado?`).trim().replace(",","."));
+    const precoMercado4 = Number(prompt(`Qual o preço do kg da carne bovina no 4° mercado?`).trim().replace(",","."));
 
 
     //PROCESSAMENTO
+    const media = (precoMercado1+precoMercado2+precoMercado3+precoMercado4) /4;
 
 
     //SAÍDA
+    document.write(`A média do preço da carne é R$${media.toFixed(2).replace(".",",")}.`);
 
 </script>
